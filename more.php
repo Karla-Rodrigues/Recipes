@@ -13,7 +13,7 @@ curl_setopt_array($curl, [
       CURLOPT_CUSTOMREQUEST => "GET",
       CURLOPT_HTTPHEADER => [
             "x-rapidapi-host: webknox-recipes.p.rapidapi.com",
-            "x-rapidapi-key: 6e3fdd41cfmshd87d88e32885fc9p1e964djsn13bef527ece2"
+            "x-rapidapi-key: "
       ],
 ]);
 

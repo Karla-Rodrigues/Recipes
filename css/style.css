@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+:root{
+  font-size: 16px;
+}
+
+/* Media */
+
+@media (min-width: 150px) {
+  :root{
+    font-size: 10px;
+  }
+  .recipe li {
+    width: 90%;
+  }
+  .page-banner h2{
+    font-size: 4rem;
+  }
+}
+@media (min-width: 780px) {
+  :root{
+    font-size: 12px;
+  }
+  .recipe li {
+    width: 45%;
+  }
+  .page-banner h2{
+    font-size: 6.50rem;
+  }
+}
+@media (min-width: 990px) {
+  :root{
+    font-size: 14px;
+  }
+  .recipe li {
+    width: 30%;
+  }
+  .page-banner h2{
+    font-size: 6.50rem;
+  }
+}
+@media (min-width: 1200px) {
+  :root{
+    font-size: 16px;
+  }
+  .recipe li {
+    width: 30%;
+  }
+  .page-banner h2{
+    font-size: 6.50rem;
+  }
+}  
+
+html,body{
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden; 
+  font: 16px/1 Arial, Helvetica,sans-serif;
+  background-color:#FDF5E6;
+}
+
+    b,
+    strong {
+      font-weight: bolder;
+    }
+    red{
+      font-family: 'Pacifico', cursive;
+      color: #B22222;
+    }
+    brown{
+      font-family: 'Pacifico', cursive;
+      color: #381c00;
+    }
+    mocha{
+      color: #cba580;
+    }
+    light{
+      color: #FDF5E6;
+    }
+    
+    /* Header **/
+    header{
+      top: 0;
+      position: fixed;
+      background:#FDF5E6;
+      color:#381c00;
+      width:100%;
+      min-height:70px;
+      border-bottom:#B22222 3px solid;
+      padding-top:1.1rem;
+      z-index: 999;
+    }
+
+    header a{
+      color:#381c00;
+      text-decoration:none;
+      text-transform: uppercase;
+      font-size:1.5rem;
+    }
+    header a:hover{
+      color:#B22222;
+      text-decoration: none;
+    }
+    
+    header li{
+      float:left;
+      display:inline;
+      padding: 0 1.25rem 0 1.25rem;
+    }
+    
+    header .highlight, header .current a{
+      color:#B22222;
+      font-weight:bold;
+    }
+    
+    /* Home Banner */
+    .page-banner{
+      background-color: #FDF5E6;
+      color:#381c00;
+      padding: 10rem 0 2.5rem 0;
+      position: relative;
+    }
+
+    .page-banner-image {
+      background-image: url("../images/banner.jpg");
+      opacity: .33;
+      background-size: cover;
+      position: absolute;
+      top: 5rem;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+
+    .page-banner-title {
+      opacity: 0.99;
+      margin:7rem 0 8rem 0;
+      position: center;
+      text-align: right;
+      width:100%;
+      padding:0.625rem;
+    }
+    
+    .page-banner h2{
+      margin-top:0.625rem;
+      margin-bottom:0.625rem;
+      font-family: 'Pacifico', cursive;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: 500;
+      line-height: 1.65rem;
+      letter-spacing: 0.625rem;
+      color: #B22222;
+    }
+
+    /* Home Tools*/
+    .page-tools{
+      background: #FDF5E6;
+      color:#381c00;
+      padding: 1.5rem 0 1rem 0;
+      position: relative;
+    }
+
+    .tools-title h1 { 
+      color:#381c00;
+      margin: 0;
+      border: 0;
+      padding: 0;
+      font-size:1.5rem;
+    }
+
+    .tools{
+      margin:0px;
+      padding: 1rem 0 1rem 0;
+      float:left;
+      text-align: center;
+    }
+  
+    .tools h3{
+      color:#381c00;
+      margin: 0;
+      border: 0;
+      padding: 0;
+      font-size:1rem;
+    }
+
+    .tools i{
+      font-size: 64px;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Pages Default */
+  .default{
+      padding: 11rem 1.25rem 1.25rem 1.25rem;
+      color:#381c00;
+      background-color:#FDF5E6;
+      text-align: center;
+    }
+
+    .default img{
+      border-radius: 50%;
+      max-width:80%;
+      max-height:80%;
+    }
+
+    .default h2{
+      color: #381c00;
+      font-size: 3rem;
+    }
+    
+    .default a{
+      color:#B22222;
+      font-size: 1.5rem;
+    }
+
+    .default a:hover {
+      color:#f39176;
+      text-decoration: none;
+    }
+
+    .default i{
+      font-size: 2.5rem;
+      padding:3px;
+    }
+
+    .default i:hover {
+      color: #f39176
+    }
+
+/* About */
+
+.about {
+  border-style: solid;
+  border-radius: 5px;
+  border: #381c00 3px;
+}
+.about i{
+  color:#B22222;
+  font-size: 3rem;
+  padding: 0 5px 0 0;
+  margin: 0;
+}
+.about i:hover {
+  color: #f39176
+}
+
+.about ul li{
+  list-style-type: none;
+  display: inline;
+}
+
+/* Recipes */
+.recipe ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  float:center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.recipe li {
+  background:  #cba580;
+  border-radius: 5px;
+  padding: 1em;
+  margin-right: 10px;
+  height: 250px;
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.recipe a.return {
+  color:#B22222;
+  float: left;
+  font-size: 1.5rem;
+}
+
+.recipe a.cookie{
+  color: #381c00;
+  font-size: 1.2rem;
+}
+.recipe a:hover {
+  color: #f39176;
+  text-decoration: none;
+}
+
+/* Details */
+.mocha-box{ 
+  background-color:#cba580;
+  border-radius: 5px;
+  margin:0.35rem;
+  padding:0.35rem;
+  float:center;
+  min-width: 300px;
+}
+
+h4.title {
+  color:#FDF5E6;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 25px;
+}
+
+h5.details {
+  color:#FDF5E6;
+  font-weight: bolder;
+  text-align: left;
+  font-size: 25px;
+}
+
+p.ingredients {
+  color:#FDF5E6;
+  font-weight: bold;
+  text-align: left;
+  font-size: 1rem;
+  flex-grow: 1;
+}
+
+.box{
+  color: #FDF5E6;
+  border-radius: 5px;
+  margin:0.35rem;
+  padding:0.35rem;
+  float:left;
+  text-align: left;
+  min-width: 300px;
+}
+
+.box ul{
+  border-left:#FDF5E6 3px solid;
+  margin-top:0.625rem;
+  margin-bottom:0.625rem;
+  font-size:16px;
+  text-align: left;
+}
+
+.box ol{
+  border-left:#FDF5E6 3px solid;
+  margin-top:0.625rem;
+  margin-bottom:0.625rem;
+  font-size:16px;
+  text-align: left;
+}
+
+.box li{
+  padding:3px;
+}
+
+/* Footer */
+.footer {
+  background-color:#FDF5E6;
+  padding: 0;
+  border: 0;
+  position: relative;
+  border-top:#B22222 3px solid;
+}
+.footer a{
+  text-align: left;
+  color:#B22222;
+  font-size: 0.8rem;
+}
+.footer a:hover {
+  font-weight: bolder;
+  color: #f39176;
+  text-decoration: none;
+}
